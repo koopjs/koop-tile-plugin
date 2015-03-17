@@ -11,7 +11,7 @@ exports.type = 'plugin';
 exports.name = 'tiles';
 
 
-getTile = function(params, data, callback ){
+var getTile = function(params, data, callback ){
   var x = parseInt( params.x ),
     y = parseInt( params.y ),
     z = parseInt( params.z ),
@@ -40,7 +40,7 @@ getTile = function(params, data, callback ){
 
 };
 
-checkFS = function( x, y, z, key, format, geojson, options, callback ){
+var checkFS = function( x, y, z, key, format, geojson, options, callback ){
     var p = [ options.dir + 'tiles', key, format, z, x].join('/');
     var file = p + '/' + y + '.' + format;
 
@@ -72,7 +72,7 @@ checkFS = function( x, y, z, key, format, geojson, options, callback ){
 // calls mapnik-tiles to create a new tile 
 // for json it just writes to disk and returns
 // for png, pbf, or utf, it calls mapnik-tiles
-stashTile = function( file, geojson, params, callback ){
+var stashTile = function( file, geojson, params, callback ){
 
   // for geojson tile just create it and return it
   if ( params.format == 'json' ){
