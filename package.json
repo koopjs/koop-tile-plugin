@@ -4,7 +4,7 @@
   "description": "A koop plugin that enables tile generation via mapnik",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/ -t 20000"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
