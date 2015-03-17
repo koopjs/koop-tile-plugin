@@ -1,19 +1,23 @@
-# koop-pgcache
+# koop-tile-plugin
 
-## A node.js module that exposes a PostGIS data cache for [Koop](https://github.com/Esri/koop) 
+## A node.js module that adds tiles creation (png, pbf, utf) to [Koop](https://github.com/Esri/koop) 
 
 ## Installation
-   ```npm install koop-pgcache```
+  ```
+    npm install koop-tile-plugin
+  ```
 
 ## Using within a Koop Application 
 
 Koop's data caching is by default a local, in-memory object. 
 
   ```javascript
-  ...
-  var koopPg = require('koop-pgcache');
 
-  koop.regisertCache( koopPg );
+  ...
+  var tiles = require('koop-tile-plugin');
+
+  koop.regiser( tiles );
+
   ```
 
 ## Resources

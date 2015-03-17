@@ -1,24 +1,24 @@
 {
-  "name": "koop-pgcache",
-  "version": "0.0.1",
-  "description": "A postgis cache for koop",
+  "name": "koop-tile-plugin",
+  "version": "1.0.0",
+  "description": "A koop plugin that enables tile generation via mapnik",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/ -t 20000"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Esri/koop-pgcache.git"
+    "url": "git://github.com/koopjs/koop-tile-plugin.git"
   },
   "author": "Chris Helm",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Esri/koop-pgcache/issues"
+    "url": "https://github.com/koopjs/koop-tiles/issues"
   },
-  "homepage": "https://github.com/Esri/koop-pgcache",
+  "homepage": "https://github.com/koopjs/koop-tile-plugin",
   "dependencies": {
-    "pg": "^4.2.0",
-    "sphericalmercator": "^1.0.3"
+    "mapnik-tiles": "^1.0.0",
+    "mkdirp": "^0.5.0"
   },
   "directories": {
     "test": "test"
