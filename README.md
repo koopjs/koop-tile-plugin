@@ -16,7 +16,7 @@ Koop's data caching is by default a local, in-memory object.
 var koop = require('koop');
 var tiles = require('koop-tile-plugin');
 
-koop.regiser(tiles);
+koop.register(tiles);
 ```
 
 ## Resources
