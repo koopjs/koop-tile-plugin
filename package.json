@@ -1,7 +1,7 @@
 {
   "name": "koop-tile-plugin",
   "version": "1.0.0",
-  "description": "A koop plugin that enables tile generation via mapnik",
+  "description": "Koop plugin that enables tile generation via mapnik.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/"

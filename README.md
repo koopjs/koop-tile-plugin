@@ -1,27 +1,35 @@
 # koop-tile-plugin
 
-A node.js module that adds tiles creation (png, pbf, utf) to [Koop](https://github.com/Esri/koop).
+> Koop plugin that enables tile generation via mapnik.
 
-## Installation
+[![npm][npm-img]][npm-url]
+[![travis][travis-img]][travis-url]
+
+[npm-img]: https://img.shields.io/npm/v/koop-tile-plugin.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/koop-tile-plugin
+[travis-img]: https://img.shields.io/travis/koopjs/koop-tile-plugin.svg?style=flat-square
+[travis-url]: https://travis-ci.org/koopjs/koop-tile-plugin
+
+Adds tiles creation (png, pbf, utf) to [Koop](https://github.com/koopjs/koop) via [mapnik](https://www.npmjs.com/package/mapnik) using [mapnik-tiles](https://www.npmjs.com/package/mapnik-tiles).
+
+## Install
 
 ```
-npm install koop-tile-plugin
+npm install koop-tile-plugin --save
 ```
 
-## Using within a Koop Application
-
-Koop's data caching is by default a local, in-memory object.
+## Usage
 
 ```js
-var koop = require('koop');
-var tiles = require('koop-tile-plugin');
+var koop = require('koop')
+var tiles = require('koop-tile-plugin')
 
-koop.register(tiles);
+koop.register(tiles)
 ```
 
 ## Resources
 
-* [Koop](https://github.com/Esri/koop)
+* [Koop Documentation](https://koopjs.github.io)
 * [ArcGIS for Developers](http://developers.arcgis.com)
 * [ArcGIS REST API Documentation](http://resources.arcgis.com/en/help/arcgis-rest-api/)
 * [twitter.com/esri](http://twitter.com/esri)
@@ -36,21 +44,4 @@ Esri welcomes contributions from anyone and everyone. Please see our [guidelines
 
 ## Licensing
 
-Copyright 2014 Esri
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-  http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-A copy of the license is available in the repository's [license.txt]( https://raw.github.com/Esri/koop-agol/master/license.txt) file.
-
-[](Esri Tags: ArcGIS Web Mapping GeoJson FeatureServices)
-[](Esri Language: JavaScript)
+[Apache 2.0](LICENSE)
