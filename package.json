@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "should": "^4.6.1",
+    "standard": "^4.5.4",
     "winston": "^0.9.0"
   },
   "homepage": "https://github.com/koopjs/koop-tile-plugin",
@@ -31,6 +32,6 @@
     "url": "git://github.com/koopjs/koop-tile-plugin.git"
   },
   "scripts": {
-    "test": "mocha test/"
+    "test": "standard && mocha test/"
   }
 }
