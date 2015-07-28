@@ -1,30 +1,36 @@
 {
   "name": "koop-tile-plugin",
-  "version": "1.0.0",
   "description": "Koop plugin that enables tile generation via mapnik.",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/koopjs/koop-tile-plugin.git"
-  },
+  "version": "1.0.0",
   "author": "Chris Helm",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koopjs/koop-tiles/issues"
+    "url": "https://github.com/koopjs/koop-tile-plugin/issues"
   },
-  "homepage": "https://github.com/koopjs/koop-tile-plugin",
   "dependencies": {
     "mapnik-tiles": "^1.0.0",
     "mkdirp": "^0.5.0"
   },
-  "directories": {
-    "test": "test"
-  },
   "devDependencies": {
     "should": "^4.6.1",
     "winston": "^0.9.0"
+  },
+  "homepage": "https://github.com/koopjs/koop-tile-plugin",
+  "keywords": [
+    "koop",
+    "mapnik",
+    "pbf",
+    "plugin",
+    "png",
+    "tiles",
+    "utf"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/koopjs/koop-tile-plugin.git"
+  },
+  "scripts": {
+    "test": "mocha test/"
   }
 }
