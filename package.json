@@ -7,13 +7,14 @@
     "url": "https://github.com/koopjs/koop-tile-plugin/issues"
   },
   "dependencies": {
-    "mapnik-tiles": "^1.0.0",
+    "mapnik-tiles": "^1.0.6",
     "mkdirp": "^0.5.0"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "should": "^4.6.1",
+    "rimraf": "^2.4.2",
     "standard": "^4.5.4",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.1",
     "winston": "^0.9.0"
   },
   "homepage": "https://github.com/koopjs/koop-tile-plugin",
@@ -33,6 +34,6 @@
     "url": "git://github.com/koopjs/koop-tile-plugin.git"
   },
   "scripts": {
-    "test": "standard && mocha test/"
+    "test": "standard && tape test/*.js | tap-spec"
   }
 }
