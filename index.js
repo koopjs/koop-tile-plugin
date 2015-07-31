@@ -1,5 +1,6 @@
 var mkdirp = require('mkdirp')
 var tiles = require('mapnik-tiles')
+var path = require('path')
 var fs = require('fs')
 
 // tells koop that this is plugin
@@ -36,8 +37,8 @@ function getTile (params, data, callback) {
 }
 
 function checkFS (x, y, z, key, format, geojson, options, callback) {
-  var p = [options.dir + 'tiles', key, format, z, x].join('/')
-  var file = p + '/' + y + '.' + format
+  var p = path.join(options.dir, 'tiles', key, format, '' + z, '' + x)
+  var file = path.join(p, y + '.' + format)
 
   options.size = options.size || 256
 
