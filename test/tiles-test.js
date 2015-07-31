@@ -20,6 +20,27 @@ describe('Tiles caching logic', function () {
     })
   })
 
+  describe('when creating utf tiles', function () {
+    it('should create a legit UTF Grid tile', function (done) {
+      var params = {
+        x: 5,
+        y: 12,
+        z: 5,
+        dir: __dirname,
+        format: 'utf',
+        key: 'fake-key'
+      }
+      tiles.getTile(params, opts, function (err, res) {
+        should.not.exist(err)
+        should.exist(res)
+        var type = typeof JSON.parse(fs.readFileSync(res).toString())
+        type.should.equal('object')
+        fs.unlink(res)
+        done()
+      })
+    })
+  })
+
   describe('vector-tiles', function () {
     it('when creating a tile', function (done) {
       var file = __dirname + '/fixtures/co.6.13.24.vector.pbf'
