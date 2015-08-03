@@ -10,7 +10,7 @@
 [travis-img]: https://img.shields.io/travis/koopjs/koop-tile-plugin.svg?style=flat-square
 [travis-url]: https://travis-ci.org/koopjs/koop-tile-plugin
 
-Adds tiles creation (png, pbf, utf) to [Koop](https://github.com/koopjs/koop) via [mapnik](https://www.npmjs.com/package/mapnik) using [mapnik-tiles](https://www.npmjs.com/package/mapnik-tiles).
+Adds tile generation (png, pbf, utf) to [Koop](https://github.com/koopjs/koop) via [mapnik](https://www.npmjs.com/package/mapnik) using [mapnik-tiles](https://www.npmjs.com/package/mapnik-tiles).
 
 ## Install
 
