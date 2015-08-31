@@ -2,10 +2,12 @@ var mkdirp = require('mkdirp')
 var tiles = require('mapnik-tiles')
 var path = require('path')
 var fs = require('fs')
+var pkg = require('./package')
 
 var plugin = {
   name: 'tiles',
-  type: 'plugin'
+  type: 'plugin',
+  version: pkg.version
 }
 
 /**
