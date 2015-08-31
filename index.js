@@ -14,7 +14,7 @@ var plugin = {
  * retrieves a tile
  *
  * @param {object} params
- * @param {[type]} geojson
+ * @param {object} geojson
  * @param {Function} callback
  */
 function getTile (params, geojson, callback) {
