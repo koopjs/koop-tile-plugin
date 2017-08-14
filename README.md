@@ -1,5 +1,7 @@
 # koop-tile-plugin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/koopjs/koop-tile-plugin.svg)](https://greenkeeper.io/)
+
 > Koop plugin that enables tile generation via mapnik.
 
 [![npm][npm-img]][npm-url]
