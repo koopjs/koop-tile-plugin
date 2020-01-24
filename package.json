@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "mapnik-tiles": "^1.0.6",
-    "mkdirp": "^0.5.0"
+    "mkdirp": "^1.0.1"
   },
   "devDependencies": {
     "rimraf": "^2.4.2",
