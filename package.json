@@ -14,7 +14,7 @@
     "rimraf": "^2.4.2",
     "standard": "^10.0.3",
     "tap-spec": "^4.0.2",
-    "tape": "^4.0.1",
+    "tape": "^5.0.0",
     "winston": "^2.3.1"
   },
   "homepage": "https://github.com/koopjs/koop-tile-plugin",
